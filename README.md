@@ -17,8 +17,7 @@ This repository contains completed Java assignments for my Data Structures class
 						neighborhood.put(get_array[1],network.get(get_array));
 					else 
 						continue;	
-				}
-				//System.out.println(neighborhood);
+				}				
 				for (String s : neighborhood.keySet()) {
 					if (done_list.contains(s)) {
 						continue;

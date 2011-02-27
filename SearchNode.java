@@ -109,7 +109,6 @@ public class SearchNode {
 				}	
 			}//end for each loop through neighborhood
 			done_list.add(current_node.address);
-			//System.out.println("done_list:" + done_list);
 			current_node = working_stack.pop();	
 		}//end while loop through current node
 		

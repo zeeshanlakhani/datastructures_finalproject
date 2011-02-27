@@ -98,7 +98,6 @@ public class SearchNodeq implements Comparable<SearchNodeq> {
 				else 
 					continue;	
 			}
-			//System.out.println(neighborhood);
 			for (String s : neighborhood.keySet()) {
 				if (done_list.contains(s)) {
 					continue;
