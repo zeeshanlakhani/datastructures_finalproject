@@ -6,7 +6,7 @@ This repository contains completed Java assignments for my Data Structures class
 
 - WeatherMapApp.java pulls in temperature info from the [National Weather Service website](http://iwin.nws.noaa.gov/iwin/nj/hourly.html) and does some parsing using a hashmap
 
-- SearchNodeq.java and SearchNode.java incorporate a text file (random_net.txt) and basically perform network searches (randomly choosing the initial node and goal node). The former uses a priority queue data structure while the latter uses a stack
+- SearchNodeq.java and SearchNode.java incorporate a text file (random_net.txt) and basically perform network searches (randomly choosing the initial node and goal node). The former uses a priority queue data structure (and focuses on best scoring path), while the latter uses a stack
 
 				final_path.add(current_node.address);
 				neighborhood.clear();
