@@ -1,5 +1,3 @@
-//weather map app 1, incomplete
-//write necessary import statements
 import java.io.*;
 import java.util.*;
 import java.net.*;
@@ -33,7 +31,6 @@ public class WeatherMapApp {
 		}
 		System.out.println("Zeeshan Lakhani LAB 5 CS 209 FAll 2010");
 		System.out.println(time);
-		//System.out.println("*Temp:-1* refers to temperatures that were labeled N/A");
 		//Note: this console output is only the testing code
 		/*for (String s:testlist)
 			System.out.println(s);*/
@@ -93,7 +90,6 @@ public class WeatherMapApp {
 					tmp_string = "-1";
 				}
 			
-			//System.out.println(tmp_string);
 			tmp = Integer.valueOf(tmp_string);
 			
 			if (tmp == -1)
@@ -104,7 +100,7 @@ public class WeatherMapApp {
 	} //end fillMap
 	
 	
-	static void fileOutput() throws IOException  { //code here
+	static void fileOutput() throws IOException  { 
 		File outputfile = new File("city_temp.txt"); 
 	  		PrintStream out = new PrintStream(
                 new FileOutputStream(outputfile));

@@ -1,4 +1,3 @@
-/*Zeeshan Lakhani HW Networking/Search Node --> 11/23/2010 */
 import java.io.*;
 import java.util.*;
 import java.lang.*;
@@ -46,12 +45,6 @@ public class SearchNode {
 		Random generator = new Random();
 		int rnd_num_1 = generator.nextInt(allvals.size());
 		
-		// String init = allvals.get(rnd_num_1);
-		// allvals.remove(rnd_num_1);
-		// int rnd_num_2 = generator.nextInt(allvals.size());
-		// String goal = allvals.get(rnd_num_2);
-		// 
-				
 		// String init = "F3";
 		// String goal = "D4";
 		System.out.println("init: " + init);
@@ -72,7 +65,6 @@ public class SearchNode {
 		network = getHash();
 		
 		SearchNode current_node = new SearchNode(null,init,0);
-		//System.out.println(address);
 		
 		//etc vals
 		int add_val = 0;
@@ -90,7 +82,7 @@ public class SearchNode {
 				else 
 					continue;	
 			}
-			//System.out.println(neighborhood);
+			
 			for (String s : neighborhood.keySet()) {
 				if (done_list.contains(s)) {
 					continue;
@@ -112,7 +104,6 @@ public class SearchNode {
 					
 					else {
 						working_stack.push(new_node);
-						//System.out.println("Yes, stack it");
 						continue;
 					}	
 				}	
@@ -143,8 +134,6 @@ public class SearchNode {
 				quick_array[1] = second;
 				hmap.put(quick_array,Integer.parseInt(third));
 				
-				//System.out.println(first + ',' + second + ',' + third);
-				//System.out.println(hmap);
 				
 	  		} // end loop
 	   	in.close();

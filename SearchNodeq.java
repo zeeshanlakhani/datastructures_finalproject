@@ -1,4 +1,3 @@
-/*Zeeshan Lakhani HW Networking/Search Node with PriorityQueue --> 12/21/2010 */
 import java.io.*;
 import java.util.*;
 import java.lang.*;
@@ -64,7 +63,6 @@ public class SearchNodeq implements Comparable<SearchNodeq> {
 	public static SearchNodeq bsf_search(String init, String goal) {
 		Map<String,Integer> neighborhood = new HashMap<String,Integer>();
 		ArrayList<String> done_list = new ArrayList<String>();
-		//Stack<SearchNodeq> working_stack = new Stack<SearchNodeq>();
 		PriorityQueue<SearchNodeq> working_pq = new PriorityQueue<SearchNodeq>();
 		
 		ArrayList<String> final_path = new ArrayList<String>();
@@ -73,7 +71,6 @@ public class SearchNodeq implements Comparable<SearchNodeq> {
 		network = getHash();
 		
 		SearchNodeq current_node = new SearchNodeq(null,init,0);
-		//System.out.println(address);
 		
 		//etc vals
 		int add_val = 0;
@@ -137,9 +134,7 @@ public class SearchNodeq implements Comparable<SearchNodeq> {
 				quick_array[0] = first;
 				quick_array[1] = second;
 				hmap.put(quick_array,Integer.parseInt(third));
-				
-				//System.out.println(first + ',' + second + ',' + third);
-				//System.out.println(hmap);
+
 				
 	  		} // end loop
 	   	in.close();
