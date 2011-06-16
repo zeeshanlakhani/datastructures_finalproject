@@ -1,6 +1,5 @@
 # Data Structures final coding projects, New Jersey City University, Fall 2010
 
-
 # What is this repo?
 This repository contains completed Java assignments for my Data Structures class in Fall of 2010. 
 
